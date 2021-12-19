@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Практическое задание №2</title>
+
+    </head>
+    
+    <body>
+        <h1>2. Библиотеки</h1>
+        <h2>Задание 2.2:</h2>
+        
+        <canvas id=canvas></canvas><br/><br/>
+        <script>
+            let CanvasWidth = canvas.width, CanvasHeight = canvas.height;
+            let ctx = document.getElementById("canvas").getContext("2d");
+            let scale = 5;
+			ctx.strokeStyle = 'blue';
+			ctx.lineWidth = 30; 
+			ctx.fillStyle = 'red'; 
+            function draw()
+			{
+                for(x = -5 * scale; x < 5 * scale; x += 1 / scale)
+				{
+                    if (x >= 1)
+					{
+                        eval(y = 5 / x);
+					}
+                    else
+					{
+                        eval(y = Math.pow(x, 2) - 4 * x);
+					}
+                    ctx.fillRect(x * scale + CanvasWidth / 2, CanvasHeight - (y * scale + CanvasHeight / 2), 1, 1);
+                }
+            }
+            draw();
+        </script>
+        
+    </body>
+</html>
