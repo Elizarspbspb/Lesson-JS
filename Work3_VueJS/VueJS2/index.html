@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Гринатом</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main id="main">
+        <div class="menu">
+            <div @click="swap1" class=menu-item>Главное</div>
+            <div @click="swap2" class=menu-item>Проекты</div>
+            <div @click="swap3" class=menu-item>Услуги</div>
+			<div @click="swap4" class=menu-item>Контакты</div>
+        </div>
+        <div class="content">
+            <div style="font-size: 2em;">
+			<div v-if="visible_1"> Гринатом - это IT-интегратор и многофункциональный центр обслуживания Госкорпорации «Росатом». </div>
+            <div v-if="visible_2">Проекты Гринатома - это федеральный и международный масштаб, это сильная команда профессионалов, это вызов твоим карьерным амбициям, интеллекту и креативному мышлению.</div>
+            <div v-if="visible_3">Сегодня Гринатом создает самые современные решения для цифровизации атомной отрасли и становится одной из самых динамично развивающихся ИТ-компаний России.</div>
+			<div v-if="visible_4"> Наши контакты. Группа подбора и адаптации: +7 (499) 949-49-19. Почта: rabota@greenatom.ru </div>
+			</div>
+		</div>
+    <script src="vue.js"></script>
+</body>
+</html>
