@@ -1,0 +1,23 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+	
+	border-radius: 40px;
+	color: #2a2f36;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 10px 15px;
+}
+.menu-item{
+    width: 50%;
+    text-align: center;
+    background-color:lightgoldenrodyellow;
+    border: 4px solid green;
+	
+	border-radius: 20px;
+	color: #2a2f36;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 10px 15px;
+  
+}
